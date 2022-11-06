@@ -1,0 +1,78 @@
+// Footer section css
+footer {
+    background-color: $gray-color;
+    .footer-top {
+      font-size: 1.4rem;
+      .footer-col-title {
+        font-family: $CaviarDreams-BoldFont;
+        color: $white-color;
+        font-size: 3rem;
+        margin-bottom: 3.6rem;
+        @include screen-xl {
+          font-size: 2.8rem;
+        }
+      }
+      .footer-col-title-red {
+        color: $red-color;
+      }
+      .footer-link {
+        margin-bottom: 1.5rem;
+        color: $lightGray-color;
+        &.active {
+          color: $darkRed-color;
+        }
+      }
+      .footer-top-text {
+        color: $white-color;
+        line-height: 2.6rem;
+        a {
+          color: $white-color;
+        }
+        .social-links {
+          color: $lightGray-color;
+          font-size: 2.4rem;
+          &:not(:last-child) {
+            margin-right: 2rem;
+          }
+        }
+      }
+      .like-share-wrapper {
+        margin-bottom: 3.5rem;
+        .like-square,
+        .share-square {
+          color: $white-color;
+          background-color: $blue-color;
+          font-weight: bold;
+          font-size: 1.2rem;
+        }
+        .follow-square {
+          background-color: $white-color;
+          font-weight: bold;
+        }
+      }
+      .timing-col {
+        background-color: $darkGray-color;
+      }
+      .section-col {
+        padding-top: 8rem;
+        @include screen-md {
+          padding-top: 4rem;
+        }
+      }
+      .timing-wrapper {
+        color: $white-color;
+        font-size: 1.3rem;
+        line-height: 2.8rem;
+        font-weight: lighter;
+      }
+    }
+    .footer-bottom {
+      color: $lightGray-color;
+      padding: 2.2rem 0;
+      border-top: 2px solid $lightGray-color;
+      .footer-bottom-text {
+        font-size: 1.3rem;
+      }
+    }
+  }
+  

@@ -1,0 +1,306 @@
+// Hero banner section css
+.hero-banner {
+  .heroBanner-carosuel {
+    .item {
+      position: relative;
+      .hero-banner-text {
+        position: absolute;
+        top: 60%;
+        transform: translateY(-50%);
+        right: 20%;
+        z-index: 2000;
+        @include screen-md {
+          right: 25%;
+          transform: translateX(-50%);
+        }
+        @include screen-sm {
+          display: none;
+        }
+        img {
+          width: 50%;
+          @include screen-lg {
+            width: 30%;
+          }
+        }
+        h1 {
+          font-family: $Rajdhani-BoldFont;
+          font-size: 5rem;
+          color: $white-color;
+          &::before {
+            content: "";
+            background: url("../images/text-design-left.png");
+            width: 6rem;
+            height: 2.2rem;
+            position: absolute;
+            bottom: -1rem;
+            left: -4rem;
+            display: block;
+          }
+          &::after {
+            content: "";
+            background: url("../images/text-design-right.png");
+            width: 7rem;
+            height: 2.2rem;
+            position: absolute;
+            bottom: -1rem;
+            right: -4rem;
+            display: block;
+          }
+          @include screen-lg {
+            font-size: 3rem;
+          }
+        }
+      }
+    }
+    .owl-prev {
+      left: 10rem;
+      @include hero-slider-arrow;
+      opacity: 0.8;
+      @include screen-md {
+        left: 3rem;
+      }
+      img {
+        @include screen-lg {
+          width: 50%;
+        }
+      }
+    }
+    .owl-next {
+      right: 10rem;
+      @include hero-slider-arrow;
+      opacity: 0.8;
+      @include screen-md {
+        right: 3rem;
+      }
+      img {
+        @include screen-lg {
+          width: 50%;
+        }
+      }
+    }
+  }
+}
+
+// Collection section css
+.collection-section {
+  padding: 3.5rem 0 5rem 0;
+  position: relative;
+  margin-bottom: 15rem;
+  background: url(../images/collection-bg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  @include screen-lg {
+    margin-bottom: 40.5rem;
+  }
+  @include screen-md {
+    margin-bottom: 25.5rem;
+  }
+  .section-title {
+    @include sectionTitle;
+    margin-bottom: 5.5rem;
+    .section-title-bg {
+      @include sectionTitleBg;
+    }
+    margin-bottom: 7.5rem;
+  }
+  .collection-img-wrapper {
+    position: relative;
+    .white-box {
+      position: absolute;
+      z-index: 1;
+      background-color: $white-color;
+      box-shadow: 14px 14px 25px 0px rgba(0, 0, 0, 0.13);
+      width: 52.5rem;
+      padding: 8rem;
+      top: 13rem;
+      left: 15rem;
+      @include screen-xl {
+        left: 0rem;
+      }
+      @include screen-lg {
+        left: 50%;
+        transform: translateX(-50%);
+        top: 70%;
+      }
+      @include screen-md {
+        left: 50%;
+        transform: translateX(-50%);
+        top: 70%;
+        width: 40.5rem;
+        padding: 4rem;
+      }
+      @include screen-sm {
+        left: 50%;
+        transform: translateX(-50%);
+        top: 70%;
+        width: 30.5rem;
+      }
+      .wr-divider {
+        position: relative;
+        width: 100%;
+      }
+      .red-box-big-text {
+        color: $black-color;
+        font-size: 4.2rem;
+        font-family: $Poppins-RegularFont;
+        font-weight: 600;
+        position: absolute;
+        left: 50%;
+        width: 100%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background-color: $white-color;
+        z-index: 2;
+        @include screen-md {
+          font-size: 3.2rem;
+        }
+        @include screen-sm {
+          font-size: 2.8rem;
+        }
+      }
+      .red-box {
+        border: 2px solid $red-color;
+        padding: 12rem 0 8rem 0;
+        @include screen-md {
+          padding: 4rem 0 4rem 0;
+        }
+        .red-box-text {
+          color: $darkGray-color2;
+          font-size: 2rem;
+          line-height: 2.6rem;
+          margin-bottom: 10rem;
+        }
+
+        .view-more-btn {
+          border: 1px solid $black-color;
+          color: $black-color;
+          font-size: 2rem;
+          line-height: 2.6rem;
+          font-family: $Poppins-RegularFont;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+// Details section css
+.details-section {
+  padding: 15rem 0;
+  background-image: url(../images/dark-bg.png);
+  background-size: cover;
+  background-position: center center;
+  color: $white-color;
+  @include screen-md {
+    padding: 5rem 0;
+  }
+  .details-medium-text {
+    font-size: 3.4rem;
+    line-height: 6.8rem;
+    font-weight: 700;
+    @include screen-xl {
+      font-size: 3rem;
+    }
+    @include screen-sm {
+      font-size: 2rem;
+      line-height: 3.8rem;
+    }
+  }
+  .details-light-text {
+    font-size: 4.5rem;
+    line-height: 6.8rem;
+    font-family: $Poppins-ThinFont;
+    @include screen-xl {
+      font-size: 4rem;
+    }
+    @include screen-sm {
+      font-size: 2rem;
+      line-height: 3.8rem;
+    }
+  }
+  .details-bold-text {
+    font-size: 6.8rem;
+    font-weight: bold;
+    @include screen-xl {
+      font-size: 6.4rem;
+    }
+    @include screen-sm {
+      font-size: 3rem;
+    }
+  }
+}
+
+// Popular Brands section
+.popularBrand-section {
+  margin: 10rem 0;
+  .section-title {
+    @include sectionTitle;
+    position: relative;
+    .section-title-bg {
+      @include sectionTitleBg;
+    }
+    margin-bottom: 7.5rem;
+  }
+  .popularBrand-carosuel {
+    .item {
+      height: 16rem;
+      border: 1px solid $lightGray-color3;
+    }
+    .owl-prev {
+      left: -10rem;
+      @include slider-arrow;
+      @include screen-md {
+        left: 35%;
+      }
+    }
+    .owl-next {
+      right: -10rem;
+      @include slider-arrow;
+      @include screen-md {
+        left: 40%;
+      }
+    }
+    .owl-item:not(.active) + .owl-item.active + .owl-item.active {
+      border: 1px solid $black-color;
+    }
+    .owl-item:not(.active) + .owl-item.active {
+      @include screen-sm {
+        border: 2px solid $black-color;
+      }
+    }
+  }
+}
+
+// News Letter section css
+.newsLetter-section {
+  background-color: $lightGray-color2;
+  padding: 3rem 0;
+  .newsLetterBg {
+    position: absolute;
+    top: -29px;
+    left: -100px;
+  }
+  .section-title {
+    @include sectionTitle;
+  }
+  .section-subtext {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+  .form-input {
+    border: 0;
+    border-bottom: 1px solid $lightGray-color;
+    font-size: 1.8rem;
+    line-height: 2rem;
+    color: $lightGray-color;
+    height: fit-content;
+    @include screen-sm {
+      font-size: 1.4rem;
+      line-height: 1rem;
+    }
+  }
+  .send-btn {
+    background-color: $lightGray-color3;
+  }
+}

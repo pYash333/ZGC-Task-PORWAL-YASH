@@ -1,0 +1,30 @@
+@mixin sectionTitle {
+  font-size: 5rem;
+  font-family: $CaviarDreams-BoldFont;
+}
+@mixin sectionTitleBg {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@mixin hero-slider-arrow {
+    position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      opacity: .4;
+}
+
+@mixin slider-arrow {
+    position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      opacity: .4;
+      @include screen-md{
+        position: relative;
+        margin-top: 5rem;
+      }
+      &:hover{
+        opacity: 1;
+      }
+}

@@ -1,0 +1,49 @@
+// Header section
+header {
+  position: relative;
+  .top-header {
+    background-color: $black-color;
+    color: $white-color;
+    font-size: 1.4rem;
+    @include screen-lg {
+      font-size: 1.2rem;
+    }
+    .contact-link-wrapper {
+      margin-right: 5rem;
+      a {
+        color: $white-color;
+      }
+    }
+  }
+  .header-bottom {
+    position: absolute;
+    top: 7rem;
+    z-index: 1000;
+    width: 100%;
+    @include screen-lg {
+      top: 12rem;
+    }
+    .navbar-brand {
+      @include screen-md {
+        width: 35%;
+      }
+    }
+    .top-navbar {
+      .navbar-nav {
+        .nav-item {
+          &:not(:last-child) {
+            margin-right: 4rem;
+            @include screen-xxl {
+              margin-right: 1rem;
+            }
+          }
+          .nav-link {
+            color: $white-color;
+            font-weight: 600;
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+  }
+}
